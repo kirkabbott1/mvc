@@ -1,0 +1,10 @@
+	MVC stands for Model, View, Controller. It is the most popular pattern to split an application into sections that have their own purpose. 
+
+The Controller acts as a middleman between the View and Model. When the client makes a request, it goes to a specific controller for handling the request flow. When a controller receives a request, it firsts asks the model for information based on the request.
+
+The Model is responsible for handling the data logic of a request, interacting with the data source. Once the model sends its response back to the controller, the controller interacts with the View to show the user the data. 
+
+The View is dynamically rendered according to the data received. When the View sends the final presentation back to the controller, the controller then sends it to the user. This is why the View and Model never interact with each other, separating the concerns of presentation and logic of data.
+
+This has it's advantages such that it is organized and more modifiable. On the other hand, the structure in navigating the code is more complex and hard to understand with all the updates. It also requires more strict rules for methods.
+
